@@ -36,7 +36,7 @@ def setup_database(data_dict):
     # Save the DataFrame as a SQL table
     df.to_sql('dialogue_acts', conn, if_exists='replace', index=False)
     conn.close()
-    print(f"🎉 Success! Database created at: {db_path}")
+    print(f" Success! Database created at: {db_path}")
 
 if __name__ == "__main__":
     setup_database(sample_data)
