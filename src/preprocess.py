@@ -3,16 +3,24 @@ import sqlite3
 import os
 
 # A small sample dataset to make sure our pipeline works flawlessly
+
 sample_data = {
     'text': [
-        "Hello, how are you?", 
-        "I am doing well, thanks.", 
-        "What is the weather like?", 
-        "It is sunny today.", 
-        "Goodbye!"
+        "Hello there!", "Good morning, how are you?", "Hey!", "Hi, glad to meet you.",
+        "What time is it?", "How do I build a model?", "Where is the data stored?", "Can you explain this?",
+        "I will finish this tomorrow.", "The weather is nice today.", "Deep learning is fascinating.", "Python is a great language.",
+        "Yes, I completely agree.", "That sounds perfect to me.", "Okay, let's do that.", "I think you are right.",
+        "Goodbye, see you later.", "Have a great day!", "Talk to you soon.", "Bye!"
     ],
-    'label': ["Greeting", "Statement", "Question", "Statement", "Closing"]
-}
+    'label': [
+        "Greeting", "Greeting", "Greeting", "Greeting",
+        "Question", "Question", "Question", "Question",
+        "Statement", "Statement", "Statement", "Statement",
+        "Agreement", "Agreement", "Agreement", "Agreement",
+        "Closing", "Closing", "Closing", "Closing"
+    ]
+
+    }
 
 def setup_database(data_dict):
     # Convert our dictionary to a pandas DataFrame

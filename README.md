@@ -2,7 +2,7 @@
 
 An end-to-end Deep Learning pipeline built using PyTorch to classify conversational intents (Dialogue Acts) from text transcripts. The project features a structured local SQL data pipeline, word vector tokenization handling, and a Bidirectional LSTM neural network capable of extracting sequence features simultaneously from both forward and backward contexts.
 
-## 🚀 Key Features
+##  Key Features
 * **SQL Data Storage:** Integrates structured local SQLite databases to simulate scalable production enterprise data configurations.
 * **Custom PyTorch Dataset Pipeline:** Implements low-level dynamic text tokenization, vocabulary mapping, and dynamic batch padding (`collate_fn`) to handle sentences of variable lengths efficiently.
 * **Deep Learning Engine:** Features a **Bidirectional LSTM** architecture to model context and sequence dynamics across human conversations.
@@ -10,7 +10,7 @@ An end-to-end Deep Learning pipeline built using PyTorch to classify conversatio
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Language:** Python
 * **Deep Learning Framework:** PyTorch (`torch`, `torch.nn`)
 * **Data Management:** SQLite, Pandas
@@ -18,7 +18,7 @@ An end-to-end Deep Learning pipeline built using PyTorch to classify conversatio
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 ```text
 dialogue-classifier/
 ├── data/

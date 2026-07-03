@@ -44,7 +44,7 @@ def main():
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-    print("🚀 Starting Training Loop...\n")
+    print(" Starting Training Loop...\n")
     model.train()
     
     for epoch in range(epochs):
@@ -69,7 +69,7 @@ def main():
             
         print(f"Epoch {epoch+1:02d}/{epochs} | Total Loss: {epoch_loss:.4f}")
 
-    print("\n🎉 Training Complete! Model optimized successfully.")
+    print("\nTraining Complete! Model optimized successfully.")
 
 if __name__ == "__main__":
     main()

@@ -20,7 +20,7 @@ def main():
     # Use AdamW - the optimized weight decay version of Adam built for Transformers
     optimizer = AdamW(model.parameters(), lr=5e-5)
 
-    print("🚀 Starting Transformer Fine-Tuning Loop...\n")
+    print(" Starting Transformer Fine-Tuning Loop...\n")
     model.train()
     
     epochs = 5
@@ -45,7 +45,7 @@ def main():
             
         print(f"Epoch {epoch+1:02d}/{epochs} | Fine-Tuning Loss: {epoch_loss:.4f}")
 
-    print("\n🎉 Transformer Fine-Tuning Complete!")
+    print("\nTransformer Fine-Tuning Complete!")
 
 if __name__ == "__main__":
     main()
