@@ -40,7 +40,7 @@ def interactive_predict():
     # Create an inverse label map to turn integer predictions back into text categories
     inverse_label_map = {v: k for k, v in dataset.label_map.items()}
     
-    print("\n🤖 Dialogue Act Prediction Engine Live!")
+    print("\nDialogue Act Prediction Engine Live!")
     print("Type your message below (or type 'exit' to quit):\n")
     
     while True:
@@ -64,7 +64,7 @@ def interactive_predict():
             predicted_class_id = torch.argmax(output_logits, dim=1).item()
             
         prediction_text = inverse_label_map[predicted_class_id]
-        print(f"Predicted Dialogue Act Intent ➡️ [{prediction_text}]\n")
+        print(f"Predicted Dialogue Act Intent -> [{prediction_text}]\n")
 
 if __name__ == "__main__":
     interactive_predict()
